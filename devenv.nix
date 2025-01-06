@@ -12,7 +12,7 @@
 
   enterShell = ''
     zsh
-  '';
+    '';
 
   # https://devenv.sh/tests/
   enterTest = ''
