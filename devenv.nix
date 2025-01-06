@@ -20,6 +20,8 @@
     git --version | grep --color=auto "${pkgs.git.version}"
   '';
 
-  # https://devenv.sh/pre-commit-hooks/
-  # pre-commit.hooks.shellcheck.enable = true;
+  git-hooks.hooks = {
+    rustfmt.enable = true;
+    clippy.enable = true;
+  };
 }
